@@ -1,0 +1,25 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: user-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    virtual-host: /ee121
+    username: ee121
+    password: ee121
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///springboot
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10010/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+sms:
+  ip: lisi
