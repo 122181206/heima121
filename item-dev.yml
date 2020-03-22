@@ -8,8 +8,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql:///leyou?characterEncoding=UTF-8
-    username: root
-    password: root
+    username: root1
+    password: root1
   rabbitmq:
     host: 127.0.0.1
     port: 5672
